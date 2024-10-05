@@ -1,0 +1,63 @@
+#  Execute/Run Instructions
+
+## Prerequisites
+1. Node.js and npm should be installed.
+
+## Installation
+1. Extract the contents of the provided zip file.
+2. Navigate to the project directory:
+3. Install project dependencies: npm install
+
+## Run the Application
+1. Execute the following command to start the server: node app.js
+2. Open your web browser and visit http://localhost:3000/
+
+-------------------------------------------------------------------------------------------------------
+
+Features and requirement detailing :
+
+1. Application uses Express framework for all endpoints in this project with GET and POST request
+
+2. Technologies used :
+    a. Animation :
+        1. Cloud Animation: In every page a cloud like chat bok moves across the screen
+        2. Sidebar Useful Links Animations: Fade-in and slide-down animations are applied to sidebar useful links using jQuery.
+        3. Hover Animation on Sidebar Useful Links: A bar slowly progresses to 100% width when hovering over navigation link on each page.
+        4.Like Button Interactions: While hovering over like button we get multiple option to like,love,etc. once clicked the emoji is set
+        5.Handle Post Button Click: Users can add post the the existing main screen.
+
+    b. jQuery
+        1.Highlight Active Link in Navbar: Points to the current page.
+        2.Like Button Interactions: While hovering over like button we get multiple option to like,love,etc. once clicked the emoji is set.
+        3.Load PDF Content into Iframe:Uses $.get to fetch PDF data and updates the src attribute of #pdfFrame with the base64-encoded PDF content.
+        4. Handle Post Button Click: Users can add post the the existing main screen.
+        5. Handle User Conversation: Functionality to have a chat interface. Defines a function appendMessage to add messages to a conversation container.
+        6. if hovering over chat-box, the motion/animation stops and resumes on move out.
+
+    c. Bootstrap
+        1. Include Bootstrap Icons: the nav menu icons are made of bootstrap icons.
+        2. Navbar Styling: The navigation bar is styled using Bootstrap classes.
+        3. Search Box Styling: The search box is styled using Bootstrap classes.
+
+    d.Handlebars
+        1. Express handle bars are used to set the layouts of every page. They are segregated to header,footer and body. Body elements are taken from the views folder.
+
+    e. MongoDB
+        1. Everytime a user chats with the chat box, the query is saved in mongo DB database.we store the user message and the time stamp.
+
+3. Templating engine is used on server. header contains app name taken from config file and footer contains the current timestamp.
+
+4. A separate data source: the post in the main page come from a filebased data source. Located at Final/private/data/posts.csv, the file contains post information, and multiple post can be added edited and modified based on need.
+   We also have a rest endpoint that displays the resume through filesystem.
+
+5. Configuration file config.js to store config data
+
+6. HTML pages: Used handle bar views
+
+7. Routing module stored in folder routes
+
+8.  image/logo stored in folder images under public
+
+9. One stylesheet stored in folder styles under public
+
+10. One client-side JavaScript file stored in folder scripts
