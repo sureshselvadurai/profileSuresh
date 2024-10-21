@@ -6,7 +6,6 @@
          <small>CS Grad Student @University of San Francisco | FullStack Developer | Ex - AI Consultant</small>
          <small>A few seconds Ago</small>
       </div>
-
    </div>
 
    <p>${description}</p>
