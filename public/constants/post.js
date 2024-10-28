@@ -8,7 +8,6 @@
       </div>
    </div>
 
-
    <p>${description}</p>
    <div class="post-status">
       <div>
