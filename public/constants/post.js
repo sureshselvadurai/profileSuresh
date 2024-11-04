@@ -7,6 +7,7 @@
          <small>A few seconds Ago</small>
       </div>
    </div>
+
    <p>${description}</p>
    <div class="post-status">
       <div>
